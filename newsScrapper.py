@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 NewsUrl = pyperclip.paste()
 
 # Descargo la pagina
-fid=urllib.request.urlopen('https://www.clarin.com/fama/error-edicion-programa-guido-kaczka-mostro-debia-ver-revelo-gran-secreto_0_GG2W-nU9p.html')
+fid=urllib.request.urlopen(NewsUrl)
 htmlnewsfull=fid.read().decode('utf-8')
 
 #######  2. "scrapear" html y dejar solo el body 
